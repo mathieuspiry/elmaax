@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Catalogue Location Événementiel</title>
+<style>
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { background: #1a1a2e; color: white; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 20px; font-weight: 700; color: #00D2B6; letter-spacing: 1px; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 20px 32px 0; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.back-btn:hover { background: #00b09e; }
+.hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 48px 32px 40px; }
+.hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+.hero p { font-size: 16px; color: #aaa; }
+.grid-hub { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; padding: 36px 32px; flex: 1; }
+.hub-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 32px 24px; text-align: center; text-decoration: none; color: #333; display: flex; flex-direction: column; align-items: center; gap: 14px; transition: all 0.2s; border-top: 4px solid #00D2B6; }
+.hub-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.15); transform: translateY(-3px); }
+.hub-card .icon { font-size: 36px; }
+.hub-card .label { font-size: 17px; font-weight: 700; color: #1a1a2e; }
+.hub-card .count { font-size: 13px; color: #999; }
+.footer { padding: 20px 32px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+
+.index-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); gap: 24px; padding: 48px 32px; flex: 1; max-width: 900px; margin: 0 auto; width: 100%; }
+.index-card { background: white; border-radius: 16px; box-shadow: 0 4px 16px rgba(0,0,0,0.1); padding: 48px 32px; text-align: center; text-decoration: none; color: #333; display: flex; flex-direction: column; align-items: center; gap: 16px; transition: all 0.25s; border-top: 5px solid #00D2B6; }
+.index-card:hover { box-shadow: 0 12px 32px rgba(0,0,0,0.18); transform: translateY(-4px); }
+.index-card .icon { font-size: 52px; }
+.index-card .label { font-size: 22px; font-weight: 700; color: #1a1a2e; }
+.index-card .sub { font-size: 14px; color: #888; line-height: 1.5; }
+.index-card .badge { background: #00D2B6; color: white; border-radius: 20px; padding: 4px 14px; font-size: 13px; font-weight: 600; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue Location Événementiel - société ELMAAX</span>
+</div>
+<div class="hero">
+  <h1>Catalogue Location</h1>
+  <p>Mobilier, décoration et équipements techniques disponibles à la location</p>
+</div>
+<div class="index-grid">
+  <a class="index-card" href="mobilier.html">
+    <span class="icon">🪑</span>
+    <span class="label">Mobilier &amp; Co</span>
+    <span class="sub">Assises, Tables, Accueil, Présentoirs,<br>Séparations, Backstage, Luminaires…</span>
+    <span class="badge">785 produits</span>
+  </a>
+  <a class="index-card" href="technique.html">
+    <span class="icon">🎛️</span>
+    <span class="label">Technique</span>
+    <span class="sub">Scène, Son, Vidéo, Éclairage &amp; Effets</span>
+    <span class="badge">452 produits</span>
+  </a>
+</div>
+<div class="footer">Catalogue Location Événementiel</div>
+</body>
+</html>

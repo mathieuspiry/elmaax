@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Meubles de rangement — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
+.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
+.topbar .breadcrumb { font-size: 13px; color: #aaa; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.back-btn:hover { background: #00b09e; }
+.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
+.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
+.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #444; margin-top: auto; }
+.card .prix s { color: #bbb; font-size: 12px; }
+.card .prix strong { color: #e05; font-weight: 700; }
+.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span class="breadcrumb">Mobilier & Co › Meubles de rangement</span>
+</div>
+<a class="back-btn" href="../mobilier.html">&#8592; Mobilier & Co</a>
+<h1 class="page-title">Meubles de rangement <span style="font-size:15px;font-weight:400;color:#999;">(18 produits)</span></h1>
+<div class="section-header">Buffets</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/meuble-tv-cannage,-pg19772.jpg" alt="Location buffet bas cannage en bois et rotin 50 x 140cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Meuble TV Cannage</div>
+    <div class="prix">210.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/buffet-vintage,-pg19768.jpg" alt="Location buffet en bois" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Buffet Vintage</div>
+    <div class="prix">320.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/buffet-cannage,-pg19764.jpg" alt="Location de buffet en cannage rotin 2 portes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Buffet Cannage</div>
+    <div class="prix">180.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/buffet-loft,-pg19751.jpg" alt="Location de buffet en métal noir 2 portes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Buffet Loft</div>
+    <div class="prix">180.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">étagères</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-resine,-pg20564.jpg" alt="Location étagère en résine" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en résine</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/meuble-etagere-blanc,-pg9032.jpg" alt="Location de meubles avec 8 étagères" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Meuble étagère blanc</div>
+    <div class="prix">79.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/grande-etagere-loft,-pg19784.jpg" alt="Location étagère design à poser en métal noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Grande Étagère Loft</div>
+    <div class="prix">95.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/petite-etagere-loft,-pg19779.jpg" alt="Location étagère design à poser en métal noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Petite Étagère Loft</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bibliotheque-rangement-senlis,-pg23210.jpg" alt="Location Bibliothèque/Etagère de rangement éco-responsable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bibliothèque rangement Senlis</div>
+    <div class="prix">85.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-metal,-pg16465.jpg" alt="Location étagère en métal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en métal</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Armoires</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/armoire-vestiaire-4-grands-casiers,-pg11588.png" alt="Location de casiers vestiaires avec grandes portes bleues" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Armoire vestiaire 4 grands casiers</div>
+    <div class="prix">165.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/armoire-vestiaire-1-case,-pg24801.png" alt="Location casier vestiaire avec grande porte bleue" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Armoire vestiaire 1 case</div>
+    <div class="prix">98.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/armoire-vestiaire-4-casiers,-pg11461.png" alt="Location de casiers vestiaires" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Armoire vestiaire 4 casiers</div>
+    <div class="prix">199.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Porte-manteaux</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-edgar-blanc,-pg20290.jpg" alt="Location porte manteau blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Edgar - Blanc</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-sacha,-pg19758.jpg" alt="Location de porte-manteau design avec porte-parapluie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Sacha</div>
+    <div class="prix">42.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-oscar,-pg19756.jpg" alt="Location de porte-manteau design" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Oscar</div>
+    <div class="prix">22.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-edgar-bois,-pg20292.jpg" alt="Location porte manteau" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Edgar - Bois</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-bois,-pg20293.jpg" alt="Location porte-manteau bois 8 tiges" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau - Bois</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+
+<div class="footer">Catalogue — Meubles de rangement — 18 produits</div>
+</body>
+</html>

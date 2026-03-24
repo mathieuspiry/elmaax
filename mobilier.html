@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mobilier &amp; Co — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { background: #1a1a2e; color: white; padding: 14px 32px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 20px; font-weight: 700; color: #00D2B6; letter-spacing: 1px; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 20px 32px 0; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; }
+.back-btn:hover { background: #00b09e; }
+.hero { background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%); color: white; padding: 48px 32px 40px; }
+.hero h1 { font-size: 32px; font-weight: 700; margin-bottom: 8px; }
+.hero p { font-size: 16px; color: #aaa; }
+.grid-hub { display: grid; grid-template-columns: repeat(auto-fill, minmax(240px, 1fr)); gap: 20px; padding: 36px 32px; flex: 1; }
+.hub-card { background: white; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.08); padding: 32px 24px; text-align: center; text-decoration: none; color: #333; display: flex; flex-direction: column; align-items: center; gap: 14px; transition: all 0.2s; border-top: 4px solid #00D2B6; }
+.hub-card:hover { box-shadow: 0 8px 24px rgba(0,0,0,0.15); transform: translateY(-3px); }
+.hub-card .icon { font-size: 36px; }
+.hub-card .label { font-size: 17px; font-weight: 700; color: #1a1a2e; }
+.hub-card .count { font-size: 13px; color: #999; }
+.footer { padding: 20px 32px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span style="font-size:13px;color:#aaa;">Accueil › Mobilier &amp; Co</span>
+</div>
+<a class="back-btn" href="index.html">&#8592; Accueil</a>
+<div class="hero" style="margin-top:20px;">
+  <h1>Mobilier &amp; Co</h1>
+  <p>Sélectionnez une catégorie pour découvrir les produits disponibles à la location</p>
+</div>
+<div class="grid-hub">
+  <a class="hub-card" href="mobilier/assises.html">
+    <span class="icon">🪑</span>
+    <span class="label">Assises</span>
+    <span class="count">222 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/accueil.html">
+    <span class="icon">🏨</span>
+    <span class="label">Accueil</span>
+    <span class="count">113 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/tables.html">
+    <span class="icon">🍽️</span>
+    <span class="label">Tables</span>
+    <span class="count">177 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/presentoirs.html">
+    <span class="icon">🗂️</span>
+    <span class="label">Présentoirs</span>
+    <span class="count">51 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/separations.html">
+    <span class="icon">🚧</span>
+    <span class="label">Séparations</span>
+    <span class="count">48 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/backstage.html">
+    <span class="icon">📦</span>
+    <span class="label">Backstage</span>
+    <span class="count">83 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/luminaires.html">
+    <span class="icon">💡</span>
+    <span class="label">Luminaires</span>
+    <span class="count">73 produits</span>
+  </a>
+  <a class="hub-card" href="mobilier/meubles-rangement.html">
+    <span class="icon">🗄️</span>
+    <span class="label">Meubles de rangement</span>
+    <span class="count">18 produits</span>
+  </a>
+</div>
+<div class="footer">Catalogue — Mobilier &amp; Co</div>
+</body>
+</html>

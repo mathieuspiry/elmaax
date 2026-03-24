@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Éclairage — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
+.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
+.topbar .breadcrumb { font-size: 13px; color: #aaa; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.back-btn:hover { background: #00b09e; }
+.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
+.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
+.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #444; margin-top: auto; }
+.card .prix s { color: #bbb; font-size: 12px; }
+.card .prix strong { color: #e05; font-weight: 700; }
+.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span class="breadcrumb">Technique › Éclairage</span>
+</div>
+<a class="back-btn" href="../technique.html">&#8592; Technique</a>
+<h1 class="page-title">Éclairage <span style="font-size:15px;font-weight:400;color:#999;">(145 produits)</span></h1>
+<div class="section-header">Projecteurs</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-mac-mah-styled-270,-pg6412.jpg" alt="Location de projecteur architectural Mac Mah - Styled 270" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Mac Mah - Styled 270</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-ayrton-icecolor-500,-pg6414.jpg" alt="Location de projecteur architectural Ayrton ICECOLOR 500" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Ayrton - Icecolor 500</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-eclairage-exterieur,-pg6397.jpg" alt="Location d'un pack d'éclairage pour extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack éclairage extérieur</div>
+    <div class="prix">90.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-eclairage-exterieur-xxl,-pg6396.jpg" alt="Location d'un pack d'éclairage pour extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack éclairage extérieur XXL</div>
+    <div class="prix"><s>270.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>216.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lyre-chauvet-rogue-2-wash,-pg4020.jpg" alt="Location de Chauvet - ROGUE R2 WASH" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lyre - Chauvet - Rogue 2 wash</div>
+    <div class="prix"><s>69.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>48.30&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lyre-contest-evo-250,-pg22004.jpg" alt="Location lyre contest" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lyre - Contest - Evo 250</div>
+    <div class="prix">40.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-20-projecteurs-led-deco-adj-qa5x,-pg5872.png" alt="Location de projecteur de lumière multicolore" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 20 projecteurs LED Déco - ADJ - QA5X</div>
+    <div class="prix"><s>180.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>162.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lyre-clay-paky-sharpy,-pg3209.jpg" alt="Location lyre professionnelle programmable Clay Paky" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lyre - Clay Paky - Sharpy</div>
+    <div class="prix">90.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-12-projecteurs-oxo-colorbeam-7fc,-pg5871.png" alt="Location de projecteur led Oxo - Colorbeam 7FC" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 12 projecteurs Oxo - Colorbeam 7FC</div>
+    <div class="prix"><s>240.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>168.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-20-projecteurs-par-38-boite-ambre-,-pg5870.jpg" alt="Location de Projecteur PAR 38 (Boite Ambre)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 20 projecteurs PAR 38 (Boite Ambre)</div>
+    <div class="prix"><s>80.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>68.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-eclairage-conference-scene,-pg5873.png" alt="Location d'un pack éclairage pour événement scénique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack éclairage Conférence & Scène</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-cameo-ts-60-w-rgbw,-pg7011.jpg" alt="Location de Projecteur - Cameo TS 60" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur - Cameo TS 60 W RGBW</div>
+    <div class="prix">32.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-multibeam-cdm-150w,-pg7305.jpg" alt="Location de projecteurs PAR CDM 150W noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Multibeam CDM 150w</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-portman-p2-hexaline,-pg6934.jpg" alt="Location jeux de lumière Portman P2 rétro" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Portman P2 Hexaline</div>
+    <div class="prix">195.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/desisti-leonardo-1kw,-pg3211.jpg" alt="Location Fresnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Desisti - Leonardo 1KW</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/desisti-leonardo-500w,-pg3214.jpg" alt="Location Fresnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Desisti - Leonardo 500W</div>
+    <div class="prix">12.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-par-64-long-alu,-pg2190.jpg" alt="Location de Projecteur - PAR64" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur - PAR 64 LONG ALU</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etc-source-four-zoom-25-50-decoupe-,-pg2187.jpg" alt="Location découpe" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">ETC - Source Four Zoom 25-50° (Découpe)</div>
+    <div class="prix">18.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/martin-mac-aura,-pg3193.png" alt="Location lyre martin" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Martin - Mac Aura</div>
+    <div class="prix">100.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-led-extra-plat-100w-smd-,-pg7310.jpg" alt="Location projecteurs LED SMD extra plat" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur LED extra plat 100W (SMD)</div>
+    <div class="prix">9.90&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-poursuite-fal-spark-575,-pg3218.jpg" alt="Location projecteur poursuite Fal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur poursuite - Fal - Spark 575</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-led-exterieur-50w-cct-serie-pro,-pg24922.jpg" alt="Location de projecteur extérieur IP66 avec technologie CCT" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur LED extérieur 50W CCT - Série pro</div>
+    <div class="prix">12.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-hpit-iodure-400w,-pg3212.jpg" alt="Location de projecteur iodure haute pression orientable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur HPIT - Iodure 400W</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/flash-parapluie-studio,-pg22948.jpg" alt="Location de projecteur parapluie photo" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Flash parapluie studio</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/spot-a-pince,-pg24567.jpg" alt="Location de spot à pince chromé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Spot à pince</div>
+    <div class="prix">12.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-pelle,-pg3410.jpg" alt="Location de projecteur pelle blanc ou noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur pelle</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/spot-expo-sur-tige,-pg6014.jpg" alt="Location de spot sur tige pince (étau inclus)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Spot expo sur tige</div>
+    <div class="prix"><div class="texte">article non disponible</div></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etc-porte-gobos,-pg3216.jpg" alt="location porte gobos" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">ETC - Porte Gobos</div>
+    <div class="prix">2.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/par-38-octogonal-flood-boite-ambre-,-pg3210.jpg" alt="Location par 38 Boite Ambre" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Par 38 - Octogonal Flood (Boite Ambre)</div>
+    <div class="prix">3.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-vintage-38cm,-pg12591.jpg" alt="Location de projecteur design au look rétro" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Vintage - 38cm</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-vintage-53cm,-pg24190.jpg" alt="Location de projecteur de décoration vintage" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Vintage - 53cm</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-design-portman-p1,-pg24191.jpg" alt="Location de projecteur vintage" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur design - PORTMAN P1</div>
+    <div class="prix">198.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/barre-led-1m-starway-cyclokolor,-pg22518.jpg" alt="Location projecteur LED 144 x 1W RGBWA" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Barre LED 1m Starway Cyclokolor</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lyre-martin-mac-viper-spot-performance,-pg20025.jpg" alt="Location Lyre Spot à couteaux LED 1000W HTI" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lyre Martin - Mac Viper Spot Performance</div>
+    <div class="prix">179.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-projecteurs-4-styled,-pg6398.jpg" alt="Location de kit 4 Styled(Projecteurs, kit câblage, flight case)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit projecteurs 4 Styled</div>
+    <div class="prix"><div class="texte">article non disponible</div></div>
+  </div>
+</div>
+<div class="section-header">Projecteurs autonomes</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-8-projecteurs-deco-led-sur-batterie-box-4-mini,-pg15664.jpg" alt="Location de pack de 8 projecteurs autonomes Box 4 Mini" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 8 Projecteurs déco LED sur batterie Box 4 Mini</div>
+    <div class="prix"><s>160.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>128.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-deco-led-sur-batterie-box-4-mini,-pg15666.jpg" alt="Location de projecteur autonome sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur déco LED sur batterie Box 4 Mini</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-10-projecteurs-led-sans-fil-avec-batterie,-pg5277.jpg" alt="Location de projecteurs autonomes avec télécommande sans fil" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 10 projecteurs LED sans FIL avec batterie</div>
+    <div class="prix"><s>250.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>200.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-20-projecteurs-led-sans-fil-avec-batterie,-pg5278.jpg" alt="Location de projecteurs autonomes avec télécommande sans fil" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 20 projecteurs LED sans FIL avec batterie</div>
+    <div class="prix"><s>500.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>350.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-deco-4-led-sur-batterie-chauvet-freedom-par-hex-4,-pg6926.jpg" alt="Location de projecteur LED contrôlable sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur déco 4 LED sur batterie Chauvet - Freedom Par Hex-4</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-deco-led-etanche-chauvet-well-fit,-pg8210.jpg" alt="Location de projecteur LED pour éclairage extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur déco LED Etanche Chauvet WELL FIT</div>
+    <div class="prix"><s>37.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>25.90&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-projecteur-astera-ax3-avec-lyre,-pg16660.jpg" alt="Location de projecteur sur batterie Astera AX3" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit projecteur Astera AX3 avec lyre</div>
+    <div class="prix">29.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-10-projecteurs-sur-batterie-freedom-hex-quad4,-pg6391.jpg" alt="Location de 10 projecteurs led sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 10 projecteurs sur batterie Freedom Hex Quad4</div>
+    <div class="prix"><s>250.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>212.50&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-6-projecteurs-deco-led-etanche-well-fit,-pg6445.png" alt="Location de projecteur led pour eclairage exterieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 6 projecteurs déco LED Etanche WELL FIT</div>
+    <div class="prix"><s>222.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>155.40&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/colonne-tubaled-60cm,-pg6446.jpg" alt="Location de colonne lumineuse sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Colonne TUBALED 60cm</div>
+    <div class="prix">34.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/colonne-tubaled-120cm,-pg6450.png" alt="Location de colonne lumineuse sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Colonne TUBALED 120cm</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/colonne-tubaled-180cm,-pg6448.jpg" alt="Location de colonne lumineuse sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Colonne TUBALED 180cm</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/personnalisation-colonne-tubaled,-pg22012.jpg" alt="Impression et personnalisation de colonne" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Personnalisation colonne TUBALED</div>
+    <div class="prix">70.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-led-etanche-phocea-light,-pg24520.jpg" alt="Location projecteur déco LED IP65 pour événement extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur LED étanche - PHOCEA LIGHT</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-4-tubes-astera-ax1,-pg15733.png" alt="Location de 4 tubes LED RGBW sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 4 tubes Astera - AX1</div>
+    <div class="prix">125.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-8-projecteurs-deco-led-sur-batterie-box-one,-pg15671.jpg" alt="Location de pack de 8 projecteurs autonomes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack 8 projecteurs déco LED sur batterie Box One</div>
+    <div class="prix"><s>96.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>76.80&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-deco-led-sur-batterie-box-one,-pg15626.png" alt="Location de projecteur autonome sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur déco LED sur batterie Box One</div>
+    <div class="prix">12.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-6-projecteurs-led-evolite-architech-150-bat,-pg15352.jpg" alt="Location de 6 projecteurs LED 30x5W intérieur et extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 6 Projecteurs LED EVOLITE ARCHITECH 150 BAT</div>
+    <div class="prix"><s>270.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>216.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-led-evolite-architech-150-bat,-pg15350.jpg" alt="Location de projecteur LED 30x5W intérieur et extérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur LED EVOLITE ARCHITECH 150 BAT</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-8-tubes-astera-ax1,-pg10728.jpg" alt="Location 8 tubes LED RGBW sur batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 8 tubes Astera - AX1</div>
+    <div class="prix">220.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Projecteurs lumière noire</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-lumiere-noire-black-gun-400w,-pg1958.JPG" alt="Location de Projecteur Lumière Noire 400W - BLACK GUN" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Lumière Noire - Black Gun 400W</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-lumiere-noire-black-gun-125w,-pg4434.jpg" alt="Location lumière noire LED UV" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur Lumière Noire - Black Gun 125W</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-parcob150-uv-ip-evolite,-pg24951.jpg" alt="Location projecteur architectural PARCOB150 UV IP – puissant effet UV" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur PARCOB150 UV IP - Evolite</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Boules à facettes</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boule-a-facettes-100cm,-pg3965.jpg" alt="Location de Boule à facettes 100cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boule à facettes 100cm</div>
+    <div class="prix">115.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/moteur-de-boule-a-facettes-100-cm,-pg3963.jpg" alt="Location de Moteur de boule à facettes 100 cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Moteur de boule à facettes 100 cm</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boule-a-facettes-40cm,-pg4045.jpg" alt="Location de boule à facettes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boule à facettes 40cm</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/moteur-de-boule-a-facettes-40-cm,-pg6044.jpg" alt="Location de moteur pour boule a facettes disco" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Moteur de boule à facettes 40 cm</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-boule-a-facettes-jb-systems-led-pingspot,-pg22029.jpg" alt="Location projecteur de faisceau LED avec lyre" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur boule à facettes - JB Systems LED Pingspot</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boule-a-facettes-noire-40-cm,-pg24798.jpg" alt="Location boule à facettes disco noire 40cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boule à facettes noire 40 cm</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boule-a-facettes-noire-30cm,-pg24797.jpg" alt="Location boule à facettes disco noire 30cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boule à facettes noire 30cm</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boule-a-facettes-noire-50-cm,-pg24799.jpg" alt="Location boule à facettes disco noire 50 cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boule à facettes noire 50 cm</div>
+    <div class="prix">48.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Jeux de lumière</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumieres-de-soiree-sur-pied-chauvet-gigbar-move,-pg22990.jpg" alt="Location de Jeux de lumières de soirée sur pied Chauvet - GigBar Move" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumières de soirée sur pied - Chauvet - GigBar Move</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumieres-sur-pied-chauvet-gigbar-2,-pg4037.jpg" alt="Location de jeux de lumières de soirée CHAUVET - GigBar 2" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumières sur pied - Chauvet - GigBar 2</div>
+    <div class="prix">69.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-jb-systems-quadrabeam-led,-pg22991.jpg" alt="Location pojecteur double LED et miroirs" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - JB Systems - Quadrabeam LED</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/martin-voyager-lynx,-pg3643.jpg" alt="Location de Jeux de Lumière Multi-couleur- MARTIN VOYAGER/LYNX" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Martin - Voyager/lynx</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-jb-systems-mystery-led,-pg1587.JPG" alt="Location de Jeux de Lumière - MYSTERY" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - JB Systems - Mystery LED</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-jb-systems-xray-led,-pg1938.JPG" alt="Location de Jeux de Lumière - XRAY LED avec effet multi-flower" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - JB Systems Xray LED</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jb-systems-icolor4,-pg1959.jpg" alt="Location de Projecteur Changeurs de Couleur ICOLOR 4 + CDE CA32 (ideal pour DJ ou Musicien)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">JB Systems - Icolor4</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-a-effet-jb-systems-led-waterwave,-pg1582.JPG" alt="Location de Projecteur à Effet - Waterwave (effet aquatique)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur à effet - Jb Systems-LED-Waterwave</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jb-systems-lounge-laser-ciel-etoile,-pg3571.jpg" alt="Location de Lounge laser avec effet ciel étoilé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">JB Systems - Lounge laser - Ciel etoilé</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-derby,-pg1573.JPG" alt="Location de Jeux de lumière - DERBY" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - DERBY</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-jb-systems-galaxy-led,-pg1589.JPG" alt="Location de Jeux de Lumière - Galaxy Led" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - JB Systems - Galaxy LED</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jeux-de-lumiere-jb-systems-polar-laser,-pg4435.jpg" alt="Loacation de polar" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jeux de lumière - Jb Systems-Polar laser</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/laser-rgb-3mw-dna-rgb3000,-pg1928.JPG" alt="Location Laser multicolor 3mw" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Laser RGB 3mw DNA RGB3000</div>
+    <div class="prix"><s>89.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>62.30&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/martin-atomic-3000-martin-detonator,-pg24907.jpg" alt="Location de stroboscopes MARTIN ATOMIC3000 avec télécommande de contrôle" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Martin - Atomic 3000 + Martin - Detonator</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/martin-atomic-3000,-pg24908.jpg" alt="Location de stroboscopes MARTIN ATOMIC3000" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Martin - Atomic 3000</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stroboscope-starway-q-strob,-pg22028.jpg" alt="Location de stroboscopes Q-STROB" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stroboscope - Starway Q-Strob</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/laser-bar-6x400-rgb-evolite,-pg24204.jpg" alt="Location jeu de lumière 6 faisceaux laser motorisés professionnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Laser Bar 6x400 RGB - Evolite</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-bulles-de-fumee-dj-power-wp-2,-pg12541.jpg" alt="Location de machine à bulles de fumée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à bulles de fumée - DJ Power WP-2</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-ciel-etoile,-pg20105.jpg" alt="Location de projecteurs laser & led projetants un ciel étoilé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit Ciel étoilé</div>
+    <div class="prix"><s>79.50&nbsp;€<sup>HT</sup></s><br>promo ! <strong>63.60&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+</div>
+<div class="section-header">Effets speciaux</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/canon-a-confettis-500-universal-effect,-pg3929.jpg" alt="Location de machine à confettis avec cartouche de CO2" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Canon à confettis 500 - Universal Effect</div>
+    <div class="prix">182.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/liquide-a-bulles-pro,-pg24209.jpg" alt="Bidon 5L bulles" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Liquide à Bulles Pro</div>
+    <div class="prix">16.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/mac-mah-geyser-rgb,-pg20279.jpg" alt="Location d'une Machine à fumée d'une puissance de 3000W avec LED RGB" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Mac Mah - Geyser RGB</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/liquide-a-fumee,-pg2826.jpg" alt="Bidon 5L fumée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Liquide à Fumée</div>
+    <div class="prix">13.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-fumee-antari-z3000,-pg1706.JPG" alt="Location de Machine à fumée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à fumée - Antari - Z3000</div>
+    <div class="prix"><s>77.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>61.60&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/liquide-a-fumee-dense,-pg4949.png" alt="Bidon 5L fumée dense" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Liquide à Fumée dense</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-fumee-antari-z1200,-pg1707.JPG" alt="Location de machine à fumée professionelle avec télécommande" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à fumée - Antari - Z1200</div>
+    <div class="prix">42.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/liquide-a-fumee-pour-geyser,-pg4475.jpg" alt="Bidon 5L fumée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Liquide à Fumée pour Geyser</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/liquide-a-neige,-pg4950.png" alt="Bidon 5L neige" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Liquide à Neige</div>
+    <div class="prix">15.90&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-brouillard-antari-hz400,-pg1531.JPG" alt="Location de machine à brouillard professionnelle avec débit réglable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à brouillard - Antari - HZ400</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-brouillard-antari-hz350,-pg2053.jpg" alt="Location de machine à brouillard professionnelle avec mode DMX intégré" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à brouillard - Antari - HZ350</div>
+    <div class="prix"><div class="texte">article non disponible</div></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-6-machines-a-etincelles-sparkular-waow-box,-pg6690.jpg" alt="Location d'un pack de 6 machine à étincelles de marque Sparkular - Waow Box" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 6 machines à étincelles Sparkular - Waow Box</div>
+    <div class="prix"><s>480.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>384.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-neige-power-snow-universal-effect,-pg22037.jpg" alt="Location de machine à neige professionelle Universal Effect" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à neige - Power Snow - Universal Effect</div>
+    <div class="prix">180.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/showtec-aircone-1w-led,-pg5246.png" alt="Location de decoration gonflable Aircone LED" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Showtec - Aircone 1W LED</div>
+    <div class="prix"><s>59.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>41.30&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/canon-co2-magnum,-pg2097.jpg" alt="Location de Canon à CO2 pour discothèque, soirées étudiantes, spectacles d'artistes, etc." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Canon CO2 - MAGNUM</div>
+    <div class="prix">119.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-bulles,-pg9348.jpg" alt="Location Machine à bulles avec gros débit" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à bulles</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-etincelles-sparkular-waow-box,-pg6557.jpg" alt="Location machine à étincelles froides Sparkular - Waow Box" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à étincelles Sparkular - Waow Box</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-flamme-artificielle-led,-pg2790.jpg" alt="Location de Machine à Flamme en soie à led" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à flamme artificielle - LED</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bouteille-de-co2,-pg1713.jpg" alt="Location de Bouteille de CO2" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bouteille de CO2</div>
+    <div class="prix">140.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/controleur-zk6200-sparkular-waowbox,-pg6858.jpg" alt="Contrôleur pour machine à étincelles Sparkular Waow Box" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Contrôleur ZK6200 Sparkular WaowBox</div>
+    <div class="prix">185.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/poudre-etincelle-sparkular-waow-box,-pg6679.jpg" alt="Consommable HC8200 pour Sparkular Waow Box" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Poudre etincelle Sparkular - Waow Box</div>
+    <div class="prix">57.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-flamme-artificielle-lampes-dichroiques,-pg2820.jpg" alt="Location de machine à flamme en tissu de soie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à flamme artificielle - Lampes dichroïques</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/flexible-co2,-pg4405.jpg" alt="Location de Flexible CO2" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Flexible CO2</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-brouillard-hazebox-1500,-pg24722.png" alt="Location machine à brouillard Evolite professionnelle avec mode DMX intégré" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à brouillard - HazeBox 1500</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-fumee-lourde-evolite-heavyfog-4000,-pg17990.png" alt="Location machine à fumée lourde" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à fumée lourde - Evolite HeavyFog 4000</div>
+    <div class="prix">149.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-fumee-antari-f80z,-pg22992.jpg" alt="Location de machine à fumée Antari" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à fumée - Antari F80z</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/canon-serpentins-multicolor,-pg1601.JPG" alt="Location de Canon à confettis (pétales de scène) à usage unique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Canon serpentins multicolor</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/happy-shooter-argent,-pg4944.png" alt="Location de Canon à confettis (pétales de scène) à usage unique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Happy shooter argent</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/happy-shooter-multicolor,-pg4947.png" alt="Location de Canon à confettis (pétales de scène) à usage unique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Happy shooter multicolor</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/happy-shooter-rose,-pg4945.png" alt="Location de Canon à confettis (pétales de scène) à usage unique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Happy shooter rose</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/happy-shooter-blanc,-pg4946.png" alt="Location de Canon à confettis (pétales de scène) à usage unique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Happy shooter blanc</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Consoles DMX</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/malighting-dot2-core,-pg4042.png" alt="Location de console MA Lighting - dot2 noyau" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">MaLighting - Dot2 core</div>
+    <div class="prix">179.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/chauvet-obey-70,-pg22000.jpg" alt="Location de Chauvet OBEY 70 - contrôleur DMX" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Chauvet - OBEY 70</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jb-systems-colormix-ca32,-pg21998.webp" alt="Location contrôleur DMX JB systems - Colormix Ca32" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jb systems - Colormix Ca32</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/mini-console-dmx-sdc-6-v2-elation-6-canaux-master,-pg15208.jpg" alt="Location de Mini console DMX SDC-6 V2 Elation - 6 canaux + master" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Mini console DMX SDC-6 V2 Elation - 6 canaux + master</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/logiciel-martin-light-jockey-interface,-pg1970.JPG" alt="Location de LOGICIEL MARTIN LIGHT JOCKEY + INTERFACE" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">LOGICIEL MARTIN LIGHT JOCKEY + INTERFACE</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/chauvet-flarecon-air-emetteur-et-recepteur-wifi-,-pg4368.jpg" alt="Location de Flarecon-air - Émetteur et récepteur WIFI" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Chauvet - Flarecon air (Emetteur et recepteur WIFI)</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/telecommande-w-remote-pour-lightkolor,-pg4371.jpg" alt="Location de telecomande" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Telecommande W-remote pour lightkolor</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/telecommande-oxo-colorbeam-7fc,-pg4353.jpg" alt="Location Telecommande oxo - Colorbeam 7fc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Telecommande Oxo - Colorbeam 7fc</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/telecommande-chauvet-par-hex,-pg4357.jpg" alt="Location Telecommande chauvet - par hex" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Telecommande chauvet - par hex</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/telecommande-adj-flat-par-qa5x,-pg4356.jpg" alt="Location Telecommande adj - flat par qa5x" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Telecommande adj - flat par qa5x</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/martin-detonator,-pg1563.JPG" alt="Location  MARTIN - DETONATOR" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Martin - Detonator</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/logiciel-sweet-light-interface,-pg1967.JPG" alt="Location de LOGICIEL SWEET LIGHT + INTERFACE" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">LOGICIEL SWEET LIGHT + INTERFACE</div>
+    <div class="prix">30.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cable-ilda-10m,-pg6439.jpg" alt="Locartion de cardon Ilda pour Laser" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Câble ILDA - 10m</div>
+    <div class="prix">6.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pangolin-quickshow-logiciel-laser,-pg1934.jpg" alt="Location de LOGICIEL DMX PANGOLIN" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">PANGOLIN - QUICKSHOW lOGICIEL LASER</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/controleur-dmx-maestro-avec-ia,-pg23007.jpg" alt="Location contrôleur d'éclairage basé sur l'IA" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Contrôleur DMX Maestro avec IA</div>
+    <div class="prix">95.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">éclairages buffets</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-eclairages-buffets-et-ambiance,-pg5270.jpg" alt="Location d'un kit éclairage avec projecteurs et mâts pour buffets et bars" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit Eclairages Buffets et Ambiance</div>
+    <div class="prix"><s>550.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>330.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+</div>
+<div class="section-header">Projecteurs gobos</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/logo-gobo-personnalise-multicouleur,-pg5936.jpg" alt="Fabrication de gobos pour projection de logos personnalisés multicouleur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Logo Gobo personnalisé multicouleur</div>
+    <div class="prix">485.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/logo-gobo-personnalise-1-couleur,-pg5935.jpg" alt="Fabrication de gobos pour projection de logos personnalisés 1 couleur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Logo Gobo personnalisé 1 couleur</div>
+    <div class="prix">299.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-de-gobo-1200w-hmi,-pg1910.JPG" alt="Location de projecteur de logos et messages avec lampe" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur de gobo 1200W HMI</div>
+    <div class="prix"><div class="texte">article non disponible</div></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/logo-gobo-personnalise-noir-et-blanc,-pg6328.jpg" alt="Fabrication de gobos pour projection de logos personnalisés en noir et blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Logo Gobo personnalisé noir et blanc</div>
+    <div class="prix">279.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/projecteur-de-gobo-led-10w,-pg22993.jpg" alt="Location de logo projector LED 10W" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Projecteur de gobo led 10w</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Accessoires DMX</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transmetteur-w-dmx-blackbox-mk2-f-1-g4,-pg4324.jpg" alt="Location émetteur / récepteur professionnel DMX HF" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transmetteur W-DMX BlackBox Mk2 F-1 G4</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/recepteur-w-dmx-blackbox-mk2-r-512-g4,-pg4327.jpg" alt="LOCATION RÉCEPTEUR PROFESSIONNEL DMX HF" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Récepteur W-DMX Blackbox Mk2 R-512 G4</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/splitter-dmx-oxo-bbox-6,-pg1974.JPG" alt="Location Splitter DMX OXO 6 sorties" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Splitter DMX Oxo - BBox 6</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/enregistreur-dmx-solano-pro-oxo,-pg5893.jpg" alt="Location enregistreur/restitueur DMX temps réel avec batterie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Enregistreur DMX Solano Pro OXO</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/dimmer-oxo-simoun-2-r,-pg6732.jpg" alt="Location de dimmer/bloc de puissance  OXO simoun 2R" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Dimmer Oxo - Simoun 2 R</div>
+    <div class="prix">22.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/mini-splitter-dmx-2ch,-pg1975.JPG" alt="Location de controlleur lumière Mini Spitter DMX" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Mini Splitter DMX 2ch</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cordon-dmx-m-f-xlr-5-broches-5m,-pg5946.jpg" alt="Location câble DMX 5 mètre mâle/femelle XLR 5 broches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cordon DMX M/F XLR 5 broches - 5m</div>
+    <div class="prix">3.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/interface-bluetooth-pour-astera-ax3,-pg6716.jpg" alt="Location de bluebox Bluetooth/CRMX/W-DMX pour projecteur sur batterie Astera AX3" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Interface Bluetooth pour Astera AX3</div>
+    <div class="prix">24.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+
+<div class="footer">Catalogue — Éclairage — 145 produits</div>
+</body>
+</html>
