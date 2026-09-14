@@ -3,35 +3,44 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Tables — Catalogue</title>
+<title>Tables — Catalogue ELMAAX</title>
+<link rel="icon" type="image/x-icon" href="../assets/favicon.ico">
+<link rel="icon" type="image/png" sizes="32x32" href="../assets/favicon-32.png">
+<link rel="apple-touch-icon" href="../assets/apple-touch-icon-180.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap">
 <style>
+
 * { box-sizing: border-box; margin: 0; padding: 0; }
-body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
-.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
-.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
-.topbar .breadcrumb { font-size: 13px; color: #aaa; }
-.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
-.back-btn:hover { background: #00b09e; }
-.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
-.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
-.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
-.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
-.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
-.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
-.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
-.card .prix { font-size: 14px; color: #444; margin-top: auto; }
-.card .prix s { color: #bbb; font-size: 12px; }
-.card .prix strong { color: #e05; font-weight: 700; }
-.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+body { font-family: 'Inter', 'Segoe UI', Arial, sans-serif; background: #F7FBFA; color: #0F3D3E; min-height: 100vh; display: flex; flex-direction: column; }
+.topbar { background: #ffffff; padding: 0 32px; height: 64px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid #d4e9e8; }
+.topbar a.logo { display: flex; align-items: center; text-decoration: none; }
+.topbar .logo img { height: 36px; width: auto; }
+.topbar .breadcrumb { font-size: 13px; color: #7a9e9e; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 20px 32px 0; padding: 9px 20px; background: #0FA3A0; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.15s; }
+.back-btn:hover { background: #0c8a87; }
+.footer { padding: 24px 32px; background: #0F3D3E; color: #7a9e9e; font-size: 13px; text-align: center; margin-top: auto; }
+.footer strong { color: #0FA3A0; }
+
+
+.page-title { font-size: 26px; font-weight: 700; color: #0F3D3E; margin: 24px 32px 8px; letter-spacing: -0.5px; }
+.section-header { background: #0FA3A0; color: white; font-size: 12px; font-weight: 700; padding: 9px 32px; margin: 28px 0 16px 0; letter-spacing: 1.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(190px, 1fr)); gap: 16px; padding: 0 32px; }
+.card { background: white; border-radius: 10px; border: 1px solid #d4e9e8; text-align: center; padding: 16px; display: flex; flex-direction: column; align-items: center; transition: all 0.15s; }
+.card:hover { border-color: #0FA3A0; box-shadow: 0 4px 16px rgba(15,163,160,0.12); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 160px; height: 140px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #0F3D3E; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #0FA3A0; font-weight: 700; margin-top: auto; }
+
 </style>
 </head>
 <body>
 <div class="topbar">
-  <span class="site-name">Catalogue</span>
-  <span class="breadcrumb">Mobilier & Co › Tables</span>
+  <a class="logo" href="../index.html"><img src="../assets/logo.svg" alt="Elmaax"></a>
+  <span class="breadcrumb">Mobilier &amp; Co › Tables</span>
 </div>
-<a class="back-btn" href="../mobilier.html">&#8592; Mobilier & Co</a>
-<h1 class="page-title">Tables <span style="font-size:15px;font-weight:400;color:#999;">(177 produits)</span></h1>
+<a class="back-btn" href="../mobilier.html">&#8592; Mobilier &amp; Co</a>
+<h1 class="page-title">Tables <span style="font-size:15px;font-weight:400;color:#7a9e9e;">(177 produits)</span></h1>
 <div class="section-header">Tables basses</div>
 <div class="grid">
   <div class="card">
@@ -1178,5 +1187,7 @@ body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #
 </div>
 
 <div class="footer">Catalogue — Tables — 177 produits</div>
+
+<div class="footer">Catalogue ELMAAX — <strong>Tables</strong></div>
 </body>
 </html>
