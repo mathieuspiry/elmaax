@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Backstage — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
+.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
+.topbar .breadcrumb { font-size: 13px; color: #aaa; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.back-btn:hover { background: #00b09e; }
+.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
+.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
+.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #444; margin-top: auto; }
+.card .prix s { color: #bbb; font-size: 12px; }
+.card .prix strong { color: #e05; font-weight: 700; }
+.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span class="breadcrumb">Mobilier & Co › Backstage</span>
+</div>
+<a class="back-btn" href="../mobilier.html">&#8592; Mobilier & Co</a>
+<h1 class="page-title">Backstage <span style="font-size:15px;font-weight:400;color:#999;">(83 produits)</span></h1>
+<div class="section-header">Kit de survie</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fontaine-a-eau,-pg22443.png" alt="Location de fontaine avec bonbonne d'eau de source de 20 litres" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fontaine à eau</div>
+    <div class="prix">120.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bonbonne-a-eau-20l-pour-fontaine,-pg14171.jpg" alt="Location bonbonne avec 20 litres d'eau de source" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bonbonne à eau 20L pour fontaine</div>
+    <div class="prix">22.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/couvrante-de-protection,-pg7464.jpg" alt="Location de couvrante de protection pour déménagement et manutention" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Couvrante de protection</div>
+    <div class="prix">0.90&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/groupe-electrogene-3300w,-pg9656.jpg" alt="Location de groupe électrogène inverter petit format et grande puissance" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Groupe électrogène 3300W</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-protection-electricien,-pg22020.jpg" alt="Location kit matériel pour électricien" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit protection électricien</div>
+    <div class="prix">95.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/extincteur-a-poudre-9-kg-classe-abc,-pg20312.jpg" alt="Location d'extincteur 9 kg poudre classe ABC" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Extincteur à poudre 9 Kg - Classe ABC</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/megaphone-porte-voix,-pg14067.jpg" alt="Location de mégaphone professionnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Mégaphone - Porte voix</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/flight-case-urgence,-pg11502.jpg" alt="Location de flight case d'urgence" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Flight case urgence</div>
+    <div class="prix">280.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">électroménager</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/defroisseur-steamer-vapeur-professionnel,-pg18801.jpeg" alt="Location de steamer" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Défroisseur/Steamer vapeur professionnel</div>
+    <div class="prix">57.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-cafe-nespresso,-pg7060.jpg" alt="Location de machine à café Magimix Inissia Nespresso" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à café Nespresso</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-cafe-90-capsules-tasses-melangeurs-et-sucres-,-pg17971.png" alt="Kit café, composé de 90 capsules TerraMoka au choix, 90 gobelets, 90 mélangeurs et 90 sucres" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit café (90 capsules, tasses, mélangeurs et sucres)</div>
+    <div class="prix">85.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/barbecue-gaz-professionnel,-pg18417.png" alt="Location d'un barbecue au gaz grand format" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Barbecue Gaz Professionnel</div>
+    <div class="prix">260.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/table-a-repasser,-pg7938.jpg" alt="Location de table à repasser" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Table à repasser</div>
+    <div class="prix">27.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fer-a-repasser-vapeur,-pg7942.jpg" alt="Location de fer à repasser" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fer à repasser vapeur</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-pop-corn-sur-chariot,-pg13508.png" alt="Location machine à pop corn avec chariot" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à pop corn sur chariot</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/gobelets-de-pop-corn-72cl-x-50,-pg12934.jpg" alt="Location de gobelets de pop corn 72cl x 50" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Gobelets de pop corn 72cl x 50</div>
+    <div class="prix">13.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pop-corn-sucre-30-litres,-pg12932.jpg" alt="Location de pop corn sucré - sac de 30 litres" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pop corn sucré - 30 Litres</div>
+    <div class="prix">21.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-barbe-a-papa,-pg24206.jpg" alt="Location machine barbe à papa" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à barbe à papa</div>
+    <div class="prix">109.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-100-batons-de-35cm-pour-barbe-a-papa,-pg12945.jpg" alt="Location de pack de 100 Batons de 35cm pour barbe à papa" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 100 Batons de 35cm pour barbe à papa</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sucre-a-barbe-a-papa-cerise,-pg14077.tif" alt="Location de sucre à barbe à papa Cerise" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sucre à barbe à papa Cerise</div>
+    <div class="prix">7.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/ventilateur-industriel-metal,-pg5850.jpg" alt="Location de ventilateur pour événements et défilés de mode" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Ventilateur industriel métal</div>
+    <div class="prix">18.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/machine-a-glacons,-pg3906.jpg" alt="Location machine à glacons" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Machine à  glacons</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/brasero-en-metal-noir,-pg9407.jpg" alt="Location de Brasero" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Brasero en métal noir</div>
+    <div class="prix">85.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-machine-avec-pop-corn-sale,-pg24330.jpeg" alt="Location machine avec pop corn salé sur chariot" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack Machine avec pop corn salé</div>
+    <div class="prix">133.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/four-micro-ondes,-pg22335.jpg" alt="Location de four à micro ondes 800W" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Four Micro ondes</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-machine-avec-pop-corn-sucre,-pg24329.jpeg" alt="Location machine avec pop corn sucré sur chariot" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack Machine avec pop corn sucré</div>
+    <div class="prix">133.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/set-accesssoires-cuisson-barbecue,-pg18418.png" alt="Set de 5 accessoires de cuisson pour barbecue en inox avec manche" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Set accesssoires cuisson barbecue</div>
+    <div class="prix">28.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bouilloire-a-eau,-pg18718.png" alt="Location de bouilloire electrique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bouilloire à eau</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/50-gobelets-ecologiques-17cl,-pg14097.png" alt="Kit de 50 gobelets en carton 17cl" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">50 gobelets écologiques 17cl</div>
+    <div class="prix">6.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/chariot-de-debarrassage,-pg14002.jpg" alt="Location de Chariot de Service pour traiteur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Chariot de Débarrassage</div>
+    <div class="prix"><s>49.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>39.20&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/5-litres-eau-demineralisee,-pg13627.jpg" alt="Bidon de 5L d'eau déminéralisée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">5 litres Eau déminéralisée</div>
+    <div class="prix">3.80&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/flight-case-regie-cantine-micro-ondes-refrigerateur-et-machine-a-cafe-nespresso-,-pg24205.jpg" alt="Cantine mobile pour équipe logistique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Flight Case Régie Cantine (micro-ondes, réfrigérateur et machine à café Nespresso)</div>
+    <div class="prix">120.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/gonfleur-electrique-ballon,-pg4165.jpg" alt="Location de gonfleur électrique pour ballon déco" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Gonfleur électrique ballon</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fontaine-a-cocktail-lumineuse,-pg4003.jpg" alt="Location de fontaine à cocktail rétro éclairage LED" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fontaine à cocktail lumineuse</div>
+    <div class="prix">135.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/aspirateur-puissant-dyson,-pg1775.jpg" alt="Location d'Aspirateur Puissant Dyson" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Aspirateur puissant - Dyson</div>
+    <div class="prix">30.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/aspirateur-portable-dyson,-pg1777.JPG" alt="Location d'Aspirateur Portable Dyson" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Aspirateur portable - Dyson</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Manutention</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-manuel,-pg3736.jpg" alt="Location de transpalette manuel pour logistique événementielle" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette manuel</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-longues-fourches,-pg3742.png" alt="Location de transpalette manuel avec longues fourches pour longues palettes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette longues fourches</div>
+    <div class="prix">59.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-peseur,-pg9309.png" alt="Location de transpalette peseur haute précision" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette peseur</div>
+    <div class="prix">59.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-ciseau-levee-haute,-pg3734.jpg" alt="Location de transpalette ciseau pour levée haute" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette ciseau levée haute</div>
+    <div class="prix">95.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escabeau-gazelle-3m,-pg24917.jpg" alt="Location escabeau PIRL échelle aux normes sécurités 4 marches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escabeau gazelle 3m</div>
+    <div class="prix">96.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escabeau-gazelle-4m,-pg24916.jpg" alt="Location escabeau PIRL échelle aux normes sécurités 7 marches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escabeau gazelle 4m</div>
+    <div class="prix">145.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/plateau-roulettes,-pg3743.png" alt="Location de plateau roulettes professionnel pour déménagement et logistique événementielle" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Plateau roulettes</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/diable-sur-pneus,-pg3745.png" alt="Location de diable sur pneus pour manutention" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Diable sur pneus</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/paire-de-rampes-de-chargement-pour-vehicules,-pg3749.png" alt="Location de paire de rampes de chargement lourd pour véhicules" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Paire de rampes de chargement pour véhicules</div>
+    <div class="prix">40.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-pont-de-chargement-court,-pg3757.png" alt="Location de rampe pont de chargement court : 1m50" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe pont de chargement court</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-pont-de-chargement-long,-pg3755.png" alt="Location de rampe pont de chargement grande longueur : 2m" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe pont de chargement long</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-trottoir,-pg9272.jpg" alt="Location de rampes de trottoir hauteur 10cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe trottoir</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/ventouse-de-manutention,-pg3746.png" alt="Location de ventouse professionnelle avec pompe à vide" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Ventouse de manutention</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sangle-50mm-monobloc-rouge-orange,-pg9281.jpg" alt="Location de sangle à cliquet 50 mm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">SANGLE 50mm (monobloc) ROUGE / ORANGE</div>
+    <div class="prix">4.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stockage-stand-plv-podium-vitrine-road-show,-pg3826.jpg" alt="Stockage de stand, plv, podium, corner, vitrine, road show" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stockage Stand PLV Podium Vitrine Road show</div>
+    <div class="prix">14.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stockage-caisses-et-emballages-vides,-pg3825.png" alt="Stockage pendant le salon et exposition ou événement" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stockage caisses et emballages vides</div>
+    <div class="prix">28.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-electrique,-pg19827.jpg" alt="Location de tire-palette avec fourches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette électrique</div>
+    <div class="prix">125.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/transpalette-court,-pg18845.png" alt="Location de petit tire-palette avec fourches courtes" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Transpalette court</div>
+    <div class="prix">59.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-perceuse-visseuse-sans-fil-bosch-gsr-18v-55,-pg16575.jpg" alt="Location perceuse visseuse professionnel sans fil BOSCH - GSR 18V-55" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit perceuse-visseuse sans fil BOSCH-GSR 18V-55</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/longe-simple-petzl-80-cm,-pg16460.jpg" alt="Location longe simple antichute avec absorbeur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Longe simple PETZL - 80 cm</div>
+    <div class="prix">48.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escabeau-5-marches-avec-main-courante,-pg16408.jpg" alt="Location escabeau 5 marches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escabeau 5 marches avec main courante</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escabeau-8-marches-avec-main-courante,-pg16413.jpg" alt="Location escabeau 8 marches" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escabeau 8 marches avec main courante</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-de-chargement-et-acces-handicape,-pg24128.jpg" alt="Location rampe de chargement et d'accès PMR pour scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe de chargement et d'accès handicapé</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/nacelle-elevatrice-electrique-haulotte-optimum-8,-pg15143.jpg" alt="Location nacelle élévatrice Haulotte Optimum 8" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Nacelle élévatrice électrique Haulotte Optimum 8</div>
+    <div class="prix">225.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/paire-de-gants-electricien,-pg19397.jpg" alt="Gants de protéctions électricité en latex Classe 00" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Paire de Gants Électricien</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/compresseur-air-50l,-pg7414.jpg" alt="Compresseur coaxial multiusage 50L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Compresseur air 50L</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Consommables</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-de-film-etirable-noir,-pg3773.png" alt="Vente de film étirable noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau de film étirable noir</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-de-film-etirable-transparent,-pg3774.png" alt="Vente de film étirable transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau de film étirable transparent</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/adhesif-pvc,-pg3775.png" alt="Rouleau d'adhésif PVC pour emballer" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Adhésif PVC</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/carton-emballage,-pg4395.jpg" alt="Pack de 20 cartons d'emballage standard" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Carton d'emballage</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bulle-emballage,-pg3776.png" alt="Rouleau de film d'emballage bulles d'air" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bulle emballage</div>
+    <div class="prix">85.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Loges</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/portant-pliant-chrome,-pg17011.jpg" alt="Location de portant pliant chrome" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Portant pliant chrome</div>
+    <div class="prix">16.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-40-cintres,-pg7281.jpg" alt="Cintres de qualité supérieur en bois de couleur noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 40 cintres</div>
+    <div class="prix">8.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/valise-mallette-maquillage,-pg23275.jpg" alt="Location de valise mallette make-up avec éclairage" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Valise mallette maquillage</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cabine-essayage-isoloir,-pg4745.jpg" alt="Location de cabine d'essayage et isoloir pour élection" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cabine d'essayage - Isoloir</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/miroir-blanc,-pg6700.jpg" alt="Location de miroir sur pied" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Miroir Blanc</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-resine,-pg20564.jpg" alt="Location étagère en résine" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en résine</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/miroir-narcisse,-pg18933.png" alt="Location miroir avec pied en bois" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Miroir Narcisse</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/miroir-sur-pied-blanc,-pg17792.jpg" alt="Location de miroir sur pied en acier blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Miroir sur pied blanc</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-metal,-pg16465.jpg" alt="Location étagère en métal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en métal</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/miroir-en-bois-sur-pied-oslo,-pg15308.jpg" alt="Location de miroir sur pied en bois" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Miroir en bois sur pied Oslo</div>
+    <div class="prix">35.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Réfrigérateurs & Congélateurs</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/refrigerateur-table-top-98l,-pg23914.jpg" alt="Location frigo compact de 98L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Réfrigérateur Table Top - 98L</div>
+    <div class="prix"><s>69.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>58.65&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/refrigerateur-vitrine-400l,-pg24290.jpg" alt="Armoire réfrigérée avec porte vitrée 400L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Réfrigérateur vitrine - 400L</div>
+    <div class="prix"><s>168.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>156.75&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/refrigerateur-vitrine-table-top-3-portes-320l,-pg23917.jpg" alt="Location arrière-bar réfrigéré 3 portes vitrées" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Réfrigérateur vitrine Table Top - 3 portes - 320L</div>
+    <div class="prix">285.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/refrigerateur-vitrine-table-top-2-portes-198l,-pg23916.jpg" alt="Location arrière-bar réfrigéré 2 portes vitrées" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Réfrigérateur vitrine Table Top - 2 portes - 198L</div>
+    <div class="prix">190.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/refrigerateur-table-top-avec-vitre-128l,-pg23915.jpg" alt="Location arrière-bar réfrigéré 1 porte vitrée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Réfrigérateur Table Top avec vitre - 128L</div>
+    <div class="prix">145.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/congelateur-300l,-pg23918.jpg" alt="Location de congélateur bahut 300L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Congélateur 300L</div>
+    <div class="prix">94.50&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+
+<div class="footer">Catalogue — Backstage — 83 produits</div>
+</body>
+</html>

@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Scène — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
+.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
+.topbar .breadcrumb { font-size: 13px; color: #aaa; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.back-btn:hover { background: #00b09e; }
+.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
+.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
+.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #444; margin-top: auto; }
+.card .prix s { color: #bbb; font-size: 12px; }
+.card .prix strong { color: #e05; font-weight: 700; }
+.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span class="breadcrumb">Technique › Scène</span>
+</div>
+<a class="back-btn" href="../technique.html">&#8592; Technique</a>
+<h1 class="page-title">Scène <span style="font-size:15px;font-weight:400;color:#999;">(82 produits)</span></h1>
+<div class="section-header">Scènes & estrades</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-sur-mesure-prix-par-m2-brute-hauteur-40cm,-pg4784.jpg" alt="Estrade modulable hauteur intermédiaire pour conférences et événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène sur mesure (prix par m2) brute - Hauteur 40cm</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-sur-mesure-prix-par-m2-habillee-hauteur-40cm,-pg4785.jpg" alt="Estrade événementielle avec finition esthétique et visibilité optimale" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène sur mesure (prix par m2) habillée - Hauteur 40cm</div>
+    <div class="prix">32.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-6m-brute--hauteur-40-cm,-pg4762.jpg" alt="Location d'estrade 6m² pour conférence et table ronde" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">scène 6m² brute – Hauteur 40 cm</div>
+    <div class="prix">93.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-6m-habillee--hauteur-40-cm,-pg4758.jpg" alt="Estrade événementielle 6m² avec finition premium" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 6m² habillée – Hauteur 40 cm</div>
+    <div class="prix">202.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-8m-brute--hauteur-40-cm,-pg7227.jpg" alt="Location d'estrade 8m² pour conférence et prise de parole" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 8m² brute – Hauteur 40 cm</div>
+    <div class="prix">115.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-8m-habillee--hauteur-40-cm,-pg7226.jpg" alt="Estrade 8m² premium pour conférence et cérémonie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 8m² habillée – Hauteur 40 cm</div>
+    <div class="prix">230.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-12m-brute--hauteur-40-cm,-pg4763.jpg" alt="Location d'estrade 12m² polyvalente pour événement professionnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 12m² brute – Hauteur 40 cm</div>
+    <div class="prix">160.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-12m-habillee--hauteur-40-cm,-pg4759.jpg" alt="Estrade 12m² premium pour événement corporate" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 12m² habillée – Hauteur 40 cm</div>
+    <div class="prix">355.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-18m-brute--hauteur-40-cm,-pg4764.jpg" alt="Location d'estrade 18m² polyvalente pour événement professionnel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 18m² brute – Hauteur 40 cm</div>
+    <div class="prix">227.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-18m-habillee--hauteur-60-cm,-pg4773.jpg" alt="Podium 18m² habillé pour spectacle et gala" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 18m² habillée – Hauteur 60 cm</div>
+    <div class="prix">487.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-24m-brute--hauteur-40-cm,-pg4765.jpg" alt="Location d'estrade 24m² polyvalente pour convention et remise de prix" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 24m² brute – Hauteur 40 cm</div>
+    <div class="prix">295.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-24m-habillee--hauteur-60-cm,-pg4775.jpg" alt="Podium 24m² habillé pour spectacle et gala" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 24m² habillée – Hauteur 60 cm</div>
+    <div class="prix">625.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-ronde-habillee-diametre-4m-h40cm,-pg23078.jpg" alt="Podium circulaire 360° pour événement et show immersif" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène ronde habillée - Diamètre 4m - H40cm</div>
+    <div class="prix">850.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-ronde-habillee-diametre-4m-h20cm,-pg23065.jpg" alt="Podium circulaire pour conférence, show et scénographie immersive" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène ronde habillée - Diamètre 4m - H20cm</div>
+    <div class="prix">780.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-4m2-eco,-pg3918.png" alt="Location de scène estrade 4m² (2x2m)" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 4m2 éco</div>
+    <div class="prix">89.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/scene-6m2-eco,-pg3904.jpg" alt="Location de scène estrade de 6m²" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Scène 6m2 éco</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Pupitres</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-eco-responsable,-pg14001.png" alt="Pupitre en bois OSB Made in France." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre éco-responsable</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-plexi-classique,-pg6615.jpg" alt="Location pupitre plexi pour vos conférences et séminaires sur Paris." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre Plexi Classique</div>
+    <div class="prix">90.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-plexiglass-transparent,-pg6209.jpg" alt="Location pupitre plexi pour vos conférences et séminaires sur Paris." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre - Plexiglass transparent</div>
+    <div class="prix"><s>116.50&nbsp;€<sup>HT</sup></s><br>promo ! <strong>98.94&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-plexiglass-noir,-pg6217.JPG" alt="Location pupitre plexi pour vos conférences et séminaires sur Paris." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre - Plexiglass noir</div>
+    <div class="prix"><s>116.40&nbsp;€<sup>HT</sup></s><br>promo ! <strong>98.94&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-lumineux-slide-swish,-pg6875.jpg" alt="Location d'un pupitre blanc lumineux" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre lumineux - Slide Swish</div>
+    <div class="prix"><s>75.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>67.50&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fronton-signaletique-pour-pupitre,-pg24163.jpg" alt="Création et impression fronton signalétique pour pupitre plexi" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fronton - Signalétique pour pupitre</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/marche-pied-le-luron,-pg9490.jpg" alt="Location de marche pied réhausse pour discours" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Marche pied - Le Luron</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-senlis,-pg23458.jpg" alt="Location pupitre de conférence en bois éco-responsable Senlis" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre Senlis</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pupitre-slide-swish-blanc,-pg15411.jpg" alt="Location de pupitre de conférence design blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pupitre Slide Swish blanc</div>
+    <div class="prix">58.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Escaliers et rampes</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/paire-de-rampes-de-chargement-pour-vehicules,-pg3749.png" alt="Location de paire de rampes de chargement lourd pour véhicules" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Paire de rampes de chargement pour véhicules</div>
+    <div class="prix">40.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-pont-de-chargement-court,-pg3757.png" alt="Location de rampe pont de chargement court : 1m50" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe pont de chargement court</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-pont-de-chargement-long,-pg3755.png" alt="Location de rampe pont de chargement grande longueur : 2m" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe pont de chargement long</div>
+    <div class="prix">50.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-3-marches,-pg24126.jpg" alt="Location d'escalier pour scène, podium et estrade d'une hauteur de 60cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier 3 marches</div>
+    <div class="prix">42.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/marche-escalier-modulaire-pour-scene-40cm,-pg15739.jpg" alt="location de marche pour escalier modulaire Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Marche escalier modulaire pour scène 40cm</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-modulaire-pour-scene-60cm,-pg15113.jpg" alt="location d'escalier modulaire pour scène 60cm - Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier modulaire pour scène 60cm</div>
+    <div class="prix">30.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-modulaire-pour-scene-80cm-rampe,-pg15117.jpg" alt="location d'escalier modulaire pour scène 80cm - Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier modulaire pour scène 80cm + rampe</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-modulaire-pour-scene-100cm-rampe,-pg15121.jpg" alt="location d'escalier modulaire pour scène 100cm - Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier modulaire pour scène 100cm + rampe</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-modulaire-pour-scene-120cm-rampe,-pg15125.jpg" alt="Location d'escalier modulaire pour scène 120cm - Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier modulaire pour scène 120cm + rampe</div>
+    <div class="prix">95.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/escalier-modulaire-pour-scene-140cm-rampe,-pg15131.jpg" alt="location d'escalier modulaire pour scène 140cm - Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Escalier modulaire pour scène 140cm + rampe</div>
+    <div class="prix">110.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rampe-de-chargement-et-acces-handicape,-pg24128.jpg" alt="Location rampe de chargement et d'accès PMR pour scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rampe de chargement et d'accès handicapé</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/main-courante-escalier-modulaire-3-4-marches,-pg14183.jpg" alt="Location main courante escalier modulaire 3-4 marches Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Main courante escalier modulaire 3-4 marches</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/main-courante-escalier-modulaire-5-6-marches,-pg14184.jpg" alt="Location main courante escalier modulaire 5-6 marches Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Main courante escalier modulaire 5-6 marches</div>
+    <div class="prix">20.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Habillages de scènes</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-noire-h20,-pg4721.jpg" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène noire H20</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/coupe-au-m2-moquette-noire-0913,-pg20353.jpg" alt="Coupe de moquette jetable ignifugée pour événements et expositions" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Coupe au m2 moquette noire 0913</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-noire-h40,-pg4726.jpg" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène noire H40</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-noire-h60,-pg4732.jpg" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène noire H60</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-noire-h80,-pg15743.png" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène noire H80</div>
+    <div class="prix">10.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-blanche-h80,-pg15757.png" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène blanche H80</div>
+    <div class="prix">12.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-blanche-h60,-pg15756.png" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène blanche H60</div>
+    <div class="prix">12.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-blanche-h40,-pg15755.png" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène blanche H40</div>
+    <div class="prix">12.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/jupe-de-scene-blanche-h20,-pg15754.png" alt="Fourniture de jupe de scène sur mesure pour scène, podium, estrade, praticable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Jupe de scène blanche H20</div>
+    <div class="prix">12.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-80-cm-x-60-m-noir,-pg15644.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 80 cm x 60 m - Noir</div>
+    <div class="prix">716.19&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-60-cm-x-60-m-noir,-pg15643.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 60 cm x 60 m - Noir</div>
+    <div class="prix">541.26&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-40-cm-x-60-m-noir,-pg15642.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 40 cm x 60 m - Noir</div>
+    <div class="prix">385.44&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-80-cm-x-60-m-blanc,-pg15641.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 80 cm x 60 m - Blanc</div>
+    <div class="prix">655.45&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-20-cm-x-60-m-blanc,-pg15640.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 20 cm x 60 m - Blanc</div>
+    <div class="prix">207.23&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-60-cm-x-60-m-blanc,-pg15639.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 60 cm x 60 m - Blanc</div>
+    <div class="prix">489.20&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rouleau-jupe-de-scene-40-cm-x-60-m-blanc,-pg15638.png" alt="Location rouleau jupe de scène pour estrade, podium, scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rouleau Jupe de scène 40 cm x 60 m - Blanc</div>
+    <div class="prix">344.96&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-cales-en-bois,-pg7438.jpg" alt="Kit de cales en bois de différentes dimensions pour installation de scène et estrade." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit Cales en bois</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Praticables</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-2x1m-sixty82,-pg14133.jpg" alt="Location praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable 2x1m - SIXTY82</div>
+    <div class="prix">23.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-2x0-5m-sixty82,-pg14132.jpg" alt="Location de praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable 2x0,5m - SIXTY82</div>
+    <div class="prix">23.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-1x1m-sixty82,-pg14130.png" alt="Location de praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable 1x1m - SIXTY82</div>
+    <div class="prix">23.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-1x0-5m-sixty82,-pg14128.png" alt="Location de praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable 1x0,5m - SIXTY82</div>
+    <div class="prix">23.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-triangulaire-droit-2x1m,-pg7197.jpg" alt="Location de praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable triangulaire droit 2x1m</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/praticable-triangulaire-gauche-2x1m,-pg7199.jpg" alt="Location de praticable podium pour usage extérieur ou intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Praticable triangulaire gauche 2x1m</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pied-20cm-praticable,-pg14120.jpg" alt="Location de pied fixe pour praticable Sixty82 20cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pied 20cm praticable</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pied-40cm-praticable,-pg3381.png" alt="Location de pied fixe pour praticable Sixty82 40cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pied 40cm praticable</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pied-60cm-praticable,-pg3382.png" alt="Location de pied fixe pour praticable Sixty82 60cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pied 60cm praticable</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pied-telescopique-60-90cm-praticable,-pg14127.jpg" alt="Location de pied télescopique pour praticable Sixty 82. Hauteur réglable de 60 à 90cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pied télescopique 60-90cm praticable</div>
+    <div class="prix">1.30&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pied-telescopique-90-140cm-praticable,-pg14196.png" alt="Location de pied télescopique 90/140cm Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pied télescopique 90/140cm praticable</div>
+    <div class="prix">1.40&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/raccord-de-praticable,-pg14203.png" alt="Location raccord de praticables Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Raccord de praticable</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/raccord-3-pieds-praticable,-pg14134.jpg" alt="Location de raccord pour 2 praticables Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Raccord 3 pieds praticable</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Garde-corps</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/garde-corps-1m,-pg14136.png" alt="Location de garde-corps pour praticable et scène Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Garde-corps 1m</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/garde-corps-2m,-pg14135.png" alt="Location de garde-corps pour praticable et scène Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Garde-corps 2m</div>
+    <div class="prix">12.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-chariot-complet-garde-corps-asd-24ml,-pg6292.png" alt="Location d'un kit complet avec chariot. 24 mètres linéaire de garde-corps et main courante pour praticable ASD" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit chariot complet garde-corps ASD 24ml</div>
+    <div class="prix"><s>420.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>336.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/support-garde-corps-30kg-m,-pg14137.png" alt="Location de support pour garde-corps Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Support garde-corps 30kg/m</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/raccord-de-garde-corps-sixty-82,-pg17495.png" alt="Location raccord de garde-corps Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Raccord de garde-corps SIXTY 82</div>
+    <div class="prix">0.70&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/boulon-m10x110-din931,-pg14200.png" alt="Location de boulon M10x110 DIN931 Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Boulon M10x110 DIN931</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rondelle-din125a-m10,-pg14198.jpg" alt="Location Rondelle DIN125A M10 Sixty82" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rondelle DIN125A  M10</div>
+    <div class="prix">5.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Rideaux et fonds de scène</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fond-de-scene-6m00-x-2m50,-pg18300.png" alt="Location de fond de scène personnalisé pour vos événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fond de Scène 6m00 x 2m50</div>
+    <div class="prix">945.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fond-de-scene-bois-8m00-x-3m00,-pg13003.jpg" alt="Location de fond de scène bois pour vos événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fond de Scène Bois 8m00 x 3m00</div>
+    <div class="prix">960.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fond-de-scene-montagne-8m00-x-3m00,-pg13002.jpg" alt="Location de fond de scène montagne pour vos événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fond de Scène Montagne 8m00 x 3m00</div>
+    <div class="prix">960.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fond-de-scene-vegetal-8m00-x-3m00,-pg12997.jpg" alt="Location de fond de scène végétal pour vos événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fond de Scène Végétal 8m00 x 3m00</div>
+    <div class="prix">5160.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/fond-de-scene-8m00-x-3m00,-pg9826.jpg" alt="Location de fond de scène personnalisé pour vos événements" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Fond de Scène 8m00 x 3m00</div>
+    <div class="prix">1440.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rideau-easydrape-pipe-and-drape,-pg19287.jpg" alt="Système modulaire de rideau occultant noir Easydrape" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rideau Easydrape - Pipe and drape</div>
+    <div class="prix">490.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/rideau-de-scene-easybuild,-pg20092.jpg" alt="Location rideau de scène" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Rideau de scène - Easybuild</div>
+    <div class="prix">300.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+
+<div class="footer">Catalogue — Scène — 82 produits</div>
+</body>
+</html>

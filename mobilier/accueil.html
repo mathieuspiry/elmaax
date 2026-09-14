@@ -1,0 +1,621 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Accueil — Catalogue</title>
+<style>
+* { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f4f4f4; color: #333; }
+.topbar { background: #1a1a2e; color: white; padding: 10px 24px; display: flex; align-items: center; justify-content: space-between; }
+.topbar .site-name { font-size: 16px; font-weight: 700; letter-spacing: 0.5px; color: #00D2B6; }
+.topbar .breadcrumb { font-size: 13px; color: #aaa; }
+.back-btn { display: inline-flex; align-items: center; gap: 8px; margin: 18px 24px; padding: 9px 18px; background: #00D2B6; color: white; text-decoration: none; border-radius: 6px; font-size: 14px; font-weight: 600; transition: background 0.2s; }
+.back-btn:hover { background: #00b09e; }
+.page-title { font-size: 24px; font-weight: 700; color: #1a1a2e; margin: 0 24px 20px; }
+.section-header { background: #00D2B6; color: white; font-size: 16px; font-weight: 700; padding: 10px 24px; margin: 28px 0 16px 0; letter-spacing: 0.5px; text-transform: uppercase; }
+.grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); gap: 16px; padding: 0 24px; }
+.card { background: white; border-radius: 8px; box-shadow: 0 1px 4px rgba(0,0,0,0.08); text-align: center; padding: 14px; display: flex; flex-direction: column; align-items: center; transition: box-shadow 0.2s, transform 0.2s; }
+.card:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.14); transform: translateY(-2px); }
+.card img { width: 100%; max-width: 170px; height: 150px; object-fit: contain; margin-bottom: 10px; }
+.card .name { font-size: 13px; font-weight: 600; color: #222; text-transform: capitalize; line-height: 1.35; margin-bottom: 8px; flex-grow: 1; }
+.card .prix { font-size: 14px; color: #444; margin-top: auto; }
+.card .prix s { color: #bbb; font-size: 12px; }
+.card .prix strong { color: #e05; font-weight: 700; }
+.footer { margin-top: 48px; padding: 20px 24px; background: #1a1a2e; color: #aaa; font-size: 13px; text-align: center; }
+</style>
+</head>
+<body>
+<div class="topbar">
+  <span class="site-name">Catalogue</span>
+  <span class="breadcrumb">Mobilier & Co › Accueil</span>
+</div>
+<a class="back-btn" href="../mobilier.html">&#8592; Mobilier & Co</a>
+<h1 class="page-title">Accueil <span style="font-size:15px;font-weight:400;color:#999;">(113 produits)</span></h1>
+<div class="section-header">Vestiaires</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/portant-pliant-chrome,-pg17011.jpg" alt="Location de portant pliant chrome" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Portant pliant chrome</div>
+    <div class="prix">16.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/portant-avec-40-cintres,-pg17013.jpg" alt="Location de portant pro pliable avec cintres en bois noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Portant avec 40 cintres</div>
+    <div class="prix"><s>24.50&nbsp;€<sup>HT</sup></s><br>promo ! <strong>19.60&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/portant-fixe-anthracite-en-z,-pg6640.jpg" alt="Location de portant droit type industriel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Portant fixe anthracite en Z</div>
+    <div class="prix"><s>16.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>11.20&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-40-cintres,-pg7281.jpg" alt="Cintres de qualité supérieur en bois de couleur noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 40 cintres</div>
+    <div class="prix">8.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/ticket-vestiaire-lot-de-50-,-pg2651.png" alt="Carnet de 50 tickets vestiaires pour portants et cintres" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Ticket vestiaire (Lot de 50)</div>
+    <div class="prix">3.95&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/pack-de-10-portants-avec-400-cintres,-pg21541.jpg" alt="Location de portant pro avec cintres en bois noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Pack de 10 Portants avec 400 cintres</div>
+    <div class="prix"><s>245.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>183.75&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-edgar-blanc,-pg20290.jpg" alt="Location porte manteau blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Edgar - Blanc</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/armoire-vestiaire-4-grands-casiers,-pg11588.png" alt="Location de casiers vestiaires avec grandes portes bleues" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Armoire vestiaire 4 grands casiers</div>
+    <div class="prix">165.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/distributeur-de-sac-parapluie,-pg12644.jpg" alt="Location de distributeurs de sac parapluie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Distributeur de sac parapluie</div>
+    <div class="prix">19.90&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-resine,-pg20564.jpg" alt="Location étagère en résine" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en résine</div>
+    <div class="prix">25.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/meuble-etagere-blanc,-pg9032.jpg" alt="Location de meubles avec 8 étagères" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Meuble étagère blanc</div>
+    <div class="prix">79.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-sacha,-pg19758.jpg" alt="Location de porte-manteau design avec porte-parapluie" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Sacha</div>
+    <div class="prix">42.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-oscar,-pg19756.jpg" alt="Location de porte-manteau design" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Oscar</div>
+    <div class="prix">22.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-edgar-bois,-pg20292.jpg" alt="Location porte manteau" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau Edgar - Bois</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/ticket-vestiaire-solutions-evenements-lot-de-50-,-pg16910.png" alt="Carnet de 50 tickets vestiaires pour portants & cintres" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Ticket vestiaire Solutions Evenements (Lot de 50)</div>
+    <div class="prix">2.95&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/ticket-vestiaire-personnalisable,-pg16907.png" alt="Carnet de 50 tickets vestiaires personnalisables" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Ticket vestiaire personnalisable</div>
+    <div class="prix">9.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/etagere-en-metal,-pg16465.jpg" alt="Location étagère en métal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Étagère en métal</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/porte-manteau-bois,-pg20293.jpg" alt="Location porte-manteau bois 8 tiges" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Porte-manteau - Bois</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/armoire-vestiaire-4-casiers,-pg11461.png" alt="Location de casiers vestiaires" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Armoire vestiaire 4 casiers</div>
+    <div class="prix">199.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Comptoirs</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-blanc-facade-blanche-plateau-blanc,-pg23402.jpg" alt="Location de comptoir design avec plateau blanc et façade PVC blanche" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Blanc façade blanche - Plateau Blanc</div>
+    <div class="prix">54.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-accueil-white-desk,-pg21974.jpg" alt="Location de comptoir d'accueil blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir d'accueil - White desk</div>
+    <div class="prix">119.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/banque-accueil-noire,-pg12612.jpg" alt="Location de banque d'accueil pliante" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Banque d'accueil noire</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-palette-industriel,-pg24071.jpg" alt="Location de comptoir en bois de palette recyclée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir palette industriel</div>
+    <div class="prix"><div class="texte">article non disponible</div></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-accueil-quixy-personnalisable,-pg23942.jpg" alt="Location de desk modulable Quixy" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir d'accueil Quixy personnalisable</div>
+    <div class="prix">265.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-accueil-tribo-blanc,-pg20201.jpg" alt="Location desk d'accueil pliable en mélaminé blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir d'accueil Tribo blanc</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/grand-comptoir-conference-personnalise,-pg18855.jpg" alt="Location grand comptoir personnalisable mélaminé blanc avec étagère réglable" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Grand comptoir Conférence personnalisé</div>
+    <div class="prix">418.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/grand-comptoir-conference,-pg18850.jpg" alt="Location comptoir design mélaminé blanc avec étagères réglables" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Grand comptoir Conférence</div>
+    <div class="prix">350.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-senlis-economique,-pg18388.png" alt="Location comptoir d'accueil éco-responsable en pin" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Senlis - Economique</div>
+    <div class="prix">68.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-senlis-personnalise,-pg25170.jpg" alt="Location comptoir d'accueil éco-responsable en pin personnalisé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Senlis - Personnalisé</div>
+    <div class="prix">165.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-senlis-premium,-pg23457.jpg" alt="Location comptoir d'accueil éco-responsable en pin" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Senlis - Premium</div>
+    <div class="prix">85.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-b-box-premium,-pg20189.jpg" alt="Location desk B-box Premium Aluvision blanc" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir B-box Premium</div>
+    <div class="prix">165.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-noir-personnalise-plateau-pembroke,-pg23399.jpg" alt="Location de comptoir design personnalisé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Noir Personnalisé - Plateau Pembroke</div>
+    <div class="prix">125.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-blanc-personnalise-plateau-pembroke,-pg23395.jpg" alt="Location de comptoir design personnalisé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Blanc Personnalisé - Plateau Pembroke</div>
+    <div class="prix">125.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-blanc-facade-noire-plateau-blanc,-pg23406.jpg" alt="Location de comptoir design avec plateau blanc et façade PVC noire" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Blanc façade noire - Plateau Blanc</div>
+    <div class="prix">69.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-noir-facade-blanche-plateau-blanc,-pg23410.jpg" alt="Location de comptoir design avec plateau blanc et façade PVC blanche" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Noir façade blanche - Plateau Blanc</div>
+    <div class="prix">54.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-kubo-noir-facade-noire-plateau-noir,-pg23416.jpg" alt="Location de comptoir design avec plateau noir et façade PVC noire" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir Kubo Noir façade noire - Plateau Noir</div>
+    <div class="prix">69.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-recycle-blanc-floreale-terrazzo,-pg22964.jpg" alt="Desk recyclé / recyclable effet moucheté avec rangement" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir recyclé blanc Floréale Terrazzo</div>
+    <div class="prix">160.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/comptoir-accueil-quixy,-pg22490.jpg" alt="Location de comptoir modulable Quixy - Toile blanche" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Comptoir d'accueil Quixy</div>
+    <div class="prix">155.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/table-haute-console-archie-aluvision-,-pg23059.jpg" alt="Location de console comptoir design haute finition" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Table haute / Console Archie (Aluvision)</div>
+    <div class="prix"><s>79.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>55.30&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+</div>
+<div class="section-header">Officiel</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-inauguration,-pg5552.png" alt="Location d'un coussin officiel avec paire de ciseaux et ruban" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit Inauguration</div>
+    <div class="prix">29.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/urne-de-vote-reglementaire,-pg9024.jpg" alt="Location urne pour vote légal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Urne de vote réglementaire</div>
+    <div class="prix"><s>45.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>31.50&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/urne-plexi,-pg3576.jpg" alt="Location urne plexi" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Urne - Plexi</div>
+    <div class="prix">16.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cabine-essayage-isoloir,-pg4745.jpg" alt="Location de cabine d'essayage et isoloir pour élection" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cabine d'essayage - Isoloir</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/urne-tirage-au-sort,-pg7869.jpg" alt="Location de vasque et urne de tirage au sort" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Urne tirage au sort</div>
+    <div class="prix">125.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/support-3-drapeaux,-pg9028.jpg" alt="Location de support pavillons intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Support 3 Drapeaux</div>
+    <div class="prix">14.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/support-1-drapeau,-pg9026.jpg" alt="Location de support pavillons intérieur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Support 1 Drapeau</div>
+    <div class="prix">8.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Hygiène et sécurité</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/poubelle-mobile-a-pedale,-pg9646.jpg" alt="Location de poubelle à pédale 110L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Poubelle mobile à pédale</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cendrier-poubelle,-pg7172.jpg" alt="Location de poubelle cendrier" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cendrier poubelle</div>
+    <div class="prix">19.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cendrier-colonne-inox,-pg13307.png" alt="Location de Potelet Cendrier" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cendrier Colonne Inox</div>
+    <div class="prix">18.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/corbeille-blanche,-pg3975.JPG" alt="Location Poubelle/Corbeille 10L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Corbeille blanche</div>
+    <div class="prix">4.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-25-sacs-poubelle-110-litres,-pg9649.jpg" alt="Sacs poubelle transparent 110 L" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 25 sacs poubelle 110 litres</div>
+    <div class="prix">15.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/seau-crachoir-noir,-pg8951.jpg" alt="Location de seau crachoir noir" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Seau crachoir noir</div>
+    <div class="prix">4.95&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/petite-benne-pour-dechets,-pg3764.png" alt="Location de petite benne pour déchets sur salons et expositions" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Petite benne pour déchets</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/destruction-et-recyclage-carton,-pg3770.png" alt="Destruction et recyclage de déchets issus des opérations événementielles et communications" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Destruction et recyclage CARTON</div>
+    <div class="prix">28.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/destruction-et-recyclage-dib,-pg3767.png" alt="Destruction et recyclage de déchets issus des opérations événementielles et communications" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Destruction et recyclage DIB</div>
+    <div class="prix">72.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/support-sol-pour-extincteur,-pg20326.jpg" alt="Location support pour extincteur sur pied avec drapeau" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Support sol pour extincteur</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/poubelle-bambou-6-litres,-pg19170.webp" alt="Location poubelle déchet en bambou" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Poubelle bambou 6 litres</div>
+    <div class="prix">9.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/poubelle-grise-40-litres,-pg17425.png" alt="Location poubelle dechet grise en metal" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Poubelle grise 40 litres</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/extincteur-epa-capacite-6l-classe-ab,-pg20314.jpg" alt="Extincteur 6L Eau Pulvérisée avec Additif Classe AB pour feux" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Extincteur EPA capacité 6L - Classe AB</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/extincteur-co2-capacite-2-kg-classe-b,-pg20313.jpg" alt="Extincteur CO2 Classe B pour feu d'origine electrique et hydrocarbures liquides" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Extincteur CO2 capacité 2 Kg - Classe B</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/extincteur-a-poudre-9-kg-classe-abc,-pg20312.jpg" alt="Location d'extincteur 9 kg poudre classe ABC" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Extincteur à poudre 9 Kg - Classe ABC</div>
+    <div class="prix">39.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/flight-case-urgence,-pg11502.jpg" alt="Location de flight case d'urgence" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Flight case urgence</div>
+    <div class="prix">280.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Bars</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-slide-break-bar,-pg6870.jpg" alt="Location de bar lumineux break bar Slide pour vos soirées et cocktails" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Slide Break Bar</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-desk-led,-pg21761.jpg" alt="Location de comptoir DESK lumineux LED" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Desk LED</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-jumbo-led,-pg21916.jpg" alt="Location de bar lumineux JUMBO LED rétroéclairé" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Jumbo LED</div>
+    <div class="prix"><s>79.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>67.15&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-slide-ice-bar,-pg6872.jpg" alt="Location d'un Ice Bar pour Cocktail" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Slide Ice Bar</div>
+    <div class="prix">53.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-jumbo-bac-led,-pg21931.jpg" alt="Location de bar lumineux Jumbo avec bac à glace" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Jumbo Bac LED</div>
+    <div class="prix"><s>79.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>63.00&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-jumbo-courbe-angle-led,-pg22960.jpg" alt="Location de bar lumineux avec angle droit arrondi" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Jumbo Courbe Angle LED</div>
+    <div class="prix"><s>79.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>67.15&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/salon-tonneau-jack-mange-debout-3-tabourets,-pg15264.jpg" alt="Location Salon Tonneau JACK" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Salon Tonneau JACK - Mange debout + 3 tabourets</div>
+    <div class="prix">120.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-palette-industriel,-pg24072.jpg" alt="Location de bar en bois de palette recyclée" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar palette industriel</div>
+    <div class="prix">168.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-industriel,-pg22959.png" alt="Location de bar et desk industriel" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar Industriel</div>
+    <div class="prix"><s>249.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>174.30&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-slide-break-line,-pg6873.jpg" alt="Location bar lumineux Slide Break Line LED" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Slide Break Line</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-lumineux-slide-snack-bar,-pg6874.jpg" alt="Location bar lumineux Slide Snack Bar LED" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar lumineux - Slide Snack Bar</div>
+    <div class="prix"><s>99.00&nbsp;€<sup>HT</sup></s><br>promo ! <strong>89.10&nbsp;€<sup>HT</sup></strong></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bar-exotique-bambou,-pg22962.jpg" alt="Location de bar exotique en bambou" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bar Exotique bambou</div>
+    <div class="prix">159.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+<div class="section-header">Solutions COVID</div>
+<div class="grid">
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/klean150-distributeur-gel-hydroalcoolique,-pg11696.png" alt="Location d'un totem distributeur de gel hydroalcoolique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Klean150 - distributeur gel hydroalcoolique</div>
+    <div class="prix">99.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/klean150-personnalise-distributeur-gel-hydroalcoolique,-pg11694.png" alt="Location de dristibuteur de gel hydroalcoolique automatique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Klean150 personnalisé - distributeur gel hydroalcoolique</div>
+    <div class="prix">199.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/klean200-personnalise-distributeur-gel-hydroalcoolique,-pg11695.png" alt="Location d'un totem distributeur de gel hydroalcoolique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Klean200 personnalisé - distributeur gel hydroalcoolique</div>
+    <div class="prix">365.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/klean250-personnalise-distributeur-gel-hydroalcoolique-avec-ecran,-pg11693.png" alt="Location d'un totem avec écran & distributeur de gel hydroalcoolique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Klean250 personnalisé- distributeur gel hydroalcoolique avec ecran</div>
+    <div class="prix">495.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-750mm-x-750mm-suspension,-pg12059.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 750mm x 750mm - Suspension</div>
+    <div class="prix">55.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-1000mm-x-750mm-suspension,-pg12058.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 1000mm x 750mm - Suspension</div>
+    <div class="prix">60.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-1000mm-x-750mm-pied-aluminium,-pg12046.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 1000mm x 750mm - pied aluminium</div>
+    <div class="prix">80.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-750mm-x-750mm-pied-aluminium,-pg12045.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 750mm x 750mm - pied aluminium</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-1000mm-x-750mm-pied-bois,-pg12043.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 1000mm x 750mm - pied bois</div>
+    <div class="prix">75.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-750mm-x-750mm-pied-bois,-pg12042.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 750mm x 750mm - pied bois</div>
+    <div class="prix">69.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-750mm-x-750mm-pied-argent,-pg12039.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 750mm x 750mm - pied argent</div>
+    <div class="prix">59.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-1000mm-x-750mm-pied-plexi,-pg12038.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 1000mm x 750mm - pied plexi</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-design-750mm-x-750mm-pied-plexi,-pg12037.jpg" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone design 750mm x 750mm - pied plexi</div>
+    <div class="prix">65.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/recharge-700-doses-borne-gel-hydro-alcoolique,-pg11858.jpg" alt="Vente de gel hydroalcoolique pour totem et borne distributeur" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Recharge 700 doses borne Gel hydro alcoolique</div>
+    <div class="prix">18.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-sol-j-encaisse-ici-rond40cm,-pg11614.pdf" alt="Sticker SOL 'J'ENCAISSE ICI' - Rond40cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker SOL "J'ENCAISSE ICI" - Rond40cm</div>
+    <div class="prix">14.89&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-sol-je-m-assois-ici-rond40cm,-pg11613.pdf" alt="Sticker SOL 'JE M ASSOIS ICI' - Rond40cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker SOL "JE M ASSOIS ICI" - Rond40cm</div>
+    <div class="prix">14.89&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-sol-j-attends-ici-rond40cm,-pg11612.pdf" alt="Sticker SOL 'J ATTENDS ICI' - Rond40cm" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker SOL "J ATTENDS ICI" - Rond40cm</div>
+    <div class="prix">14.89&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-fleche-sol-suivez-la-fleche-,-pg11611.pdf" alt="Sticker 'FLECHE SOL - SUIVEZ LA FLECHE'" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker "FLECHE SOL - SUIVEZ LA FLECHE"</div>
+    <div class="prix">14.89&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-fleche-escalier-descente-,-pg11610.pdf" alt="Sticker 'FLECHE ESCALIER - DESCENTE'" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker "FLECHE ESCALIER - DESCENTE"</div>
+    <div class="prix">6.79&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-fleche-escalier-montee-,-pg11609.pdf" alt="Sticker 'FLECHE ESCALIER - MONTEE'" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker "FLECHE ESCALIER - MONTEE"</div>
+    <div class="prix">6.79&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-set-de-table-emplacement-a-respecter-,-pg11608.pdf" alt="Sticker 'SET DE TABLE - EMPLACEMENT A RESPECTER'" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker "SET DE TABLE - EMPLACEMENT A RESPECTER"</div>
+    <div class="prix">11.87&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/sticker-set-de-bureau-emplacement-a-respecter-,-pg11607.pdf" alt="Sticker 'SET DE BUREAU - EMPLACEMENT A RESPECTER'" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Sticker "SET DE BUREAU - EMPLACEMENT A RESPECTER"</div>
+    <div class="prix">11.87&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bidon-5l-gel-hydro-alcoolique,-pg11606.jpg" alt="Vente de gel hydroalcoolique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bidon 5L Gel hydro alcoolique</div>
+    <div class="prix">67.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lot-de-visiere-de-protection-covid-19,-pg11605.jpg" alt="Vente de visière de protection écologique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lot de Visière de protection Covid-19</div>
+    <div class="prix">78.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stickers-distances-barrieres-20-x-30cm,-pg11560.jpg" alt="Adhésif distances de sécurité avec impression covid19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stickers distances barrières 20 x 30cm</div>
+    <div class="prix">17.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/roll-up-transparent,-pg11553.jpg" alt="Location de kakemono" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Roll Up transparent</div>
+    <div class="prix">47.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/roll-up-informations-covid-19,-pg11547.jpg" alt="Location de kakemono Covid 19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Roll Up Informations Covid 19</div>
+    <div class="prix">45.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/visuel-potelet-guidage,-pg18312.png" alt="Location de visuel covid19 pour potelet de guidage" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Visuel potelet guidage</div>
+    <div class="prix">115.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/kit-2-panneaux-information-covid19,-pg11538.jpg" alt="Panneaux d'affichage information des gestes barrieres." loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Kit 2 Panneaux Information COVID19</div>
+    <div class="prix">49.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stickers-rond-j-attend-ici-diam-40cm,-pg11532.png" alt="Adhésif spécial sol avec impression covid19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stickers rond j'attend ici diam 40cm</div>
+    <div class="prix">19.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/stickers-gardez-vos-distances-15x80cm,-pg11529.png" alt="Adhésif spécial sol avec impression covid19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Stickers Gardez vos distances 15x80cm</div>
+    <div class="prix">19.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/mur-distributeur-gel-hydroalcoolique,-pg11511.jpg" alt="Location d'un mur distributeur de gel hydroalcoolique" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Mur distributeur gel hydroalcoolique</div>
+    <div class="prix">895.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lot-de-50-masques-3-plis,-pg11508.jpg" alt="Vente de masque 3 plis" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lot de 50 masques 3 plis</div>
+    <div class="prix">55.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lot-500-flyers-a4-covid-19,-pg11507.jpg" alt="Vente de flyers covid 19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lot 500 Flyers A4 - Covid-19</div>
+    <div class="prix">187.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/lot-de-500-flyers-a5-covid-19,-pg11506.jpg" alt="Vente de flyers covid 19" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Lot de 500 Flyers A5 - Covid-19</div>
+    <div class="prix">76.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/hygiaphone-ecologique,-pg11505.png" alt="Location d'hygiaphone de protection transparent" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Hygiaphone Ecologique</div>
+    <div class="prix">39.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/cloison-separatrice-4-box,-pg11488.jpg" alt="Location de cloison de séparation" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Cloison separatrice 4 Box</div>
+    <div class="prix">880.00&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bac-distributeur-de-doses-gel-hydroalcoolique,-pg11464.jpg" alt="Location de bac contenant 500 doses de gels hydroalcooliques" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bac distributeur de doses gel Hydroalcoolique</div>
+    <div class="prix">160.50&nbsp;€<sup>HT</sup></div>
+  </div>
+  <div class="card">
+    <img src="https://www.solutions-evenements.fr/bac-distributeur-gel-hydroalcoolique-pocket,-pg11463.jpg" alt="Location de bac contenant 200 flacons de gels hydroalcooliques au format pocket" loading="lazy" onerror="this.style.display='none'">
+    <div class="name">Bac distributeur Gel Hydroalcoolique Pocket</div>
+    <div class="prix">273.00&nbsp;€<sup>HT</sup></div>
+  </div>
+</div>
+
+<div class="footer">Catalogue — Accueil — 113 produits</div>
+</body>
+</html>
